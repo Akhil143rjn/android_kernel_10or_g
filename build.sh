@@ -4,5 +4,5 @@ export CROSS_COMPILE=/home/akhil/kernel/tc/bin/aarch64-linux-android-
 export KBUILD_BUILD_USER="AkHIl"
 export KBUILD_BUILD_HOST="A3YN"
 mkdir -p out
-make O=out msmcortex_defconfig
-make O=out -j16
+make O=out 10orG_defconfig
+make O=out -j8
