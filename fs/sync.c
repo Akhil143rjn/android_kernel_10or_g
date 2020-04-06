@@ -204,6 +204,7 @@ EXPORT_SYMBOL(vfs_fsync_range);
  */
 int vfs_fsync(struct file *file, int datasync)
 {
+     return vfs_fsync_range(file, 0, LLONG_MAX, datasync);
         if (!fsync_enabled)
 		return 0;
 
